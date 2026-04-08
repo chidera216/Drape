@@ -1,1 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Boldonse&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --color-coral: #f1645c;
+  --color-coral-dark: #d94f45;
+  --color-off-white: #f2f2f2;
+  --color-drape-black: #111111;
+  --color-hero: #e8eefa;
+  --font-Nunito: "Nunito", sans-serif;
+  --font-Outfit: "Outfit", sans-serif;
+  --font-Anton: "Anton", sans-serif;
+  --font-Boldonse: "Boldonse", system-ui;
+}
+
+@layer {
+  body {
+    @apply bg-off-white text-drape-black;
+  }
+}
