@@ -2,11 +2,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-coral: #f1645c;
-  --color-coral-dark: #d94f45;
-  --color-off-white: #f2f2f2;
+  --color-cta: #8c73ea;
+  --color-white: #ffffff;
+  --color-off-white: #fafafa;
   --color-drape-black: #111111;
-  --color-hero: #e8eefa;
   --font-Nunito: "Nunito", sans-serif;
   --font-Outfit: "Outfit", sans-serif;
   --font-Anton: "Anton", sans-serif;
@@ -15,6 +14,21 @@
 
 @layer {
   body {
-    @apply bg-off-white text-drape-black;
+    @apply bg-white text-drape-black;
   }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  } /* Reset happens here, but it's invisible */
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content; /* Critical: tells the div to be as wide as the content */
+  animation: marquee 30s linear infinite;
 }

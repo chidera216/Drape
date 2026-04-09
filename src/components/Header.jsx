@@ -24,9 +24,9 @@ const Navbar = () => {
   };
 
   return (
-    <header className="body bg-hero z-50 shadow-sm fixed w-full  px-4 py-4 sm:pt-4 max-w-[1440px]">
-      <nav className="flex justify-between  items-center">
-        <p className="font-Boldonse text-2xl sm:text-3xl">DRAPE</p>
+    <header className="body bg-white z-50 rounded-b-xl shadow-sm fixed right-0 left-0 w-full ">
+      <nav className="flex justify-between max-w-350 m-auto px-4 py-4 md:px-10 md:py-3  items-center">
+        <p className="font-Boldonse text-[18px] sm:text-xl">DRAPE</p>
         {/* DESKTOP NAVBAR */}
         <ul className="hidden lg:flex">
           {navLinks.map((link) => {
@@ -35,7 +35,7 @@ const Navbar = () => {
               <li key={link.id}>
                 <button
                   onClick={() => handleNavClick(link.id)}
-                  className={`px-6 py-2 rounded-full font-medium transition-all duration-300 text-xs lg:text-base
+                  className={`px-6 py-2 rounded-full font-medium transition-all duration-300 text-[16px]
                   ${isActive ? "text-black  scale-105" : "text-gray-600"}
                 `}
                 >
